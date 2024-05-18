@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url(/get_schwifty.ttf);
+    
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url(Heavitas.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+.background-rick{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+}
+
+.opacity{
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first-container{
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    height: 80%;
+    z-index: 30;
+}
+
+
+.title h1{
+    width: 100%;
+    font-size: 10rem;
+    text-align: center;
+    font-family: Get Schwifty;
+    color: #88e23b
+    ;
+    text-shadow: 0px 0px 18px rgba(136, 226, 59, 1);
+}
+
+.title-p{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
