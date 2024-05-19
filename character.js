@@ -67,39 +67,25 @@ function makeCard (character) {
 
 
 
-
+const apiURL = "https://rickandmortyapi.com/api/character"
 const botonPrueba = document.querySelector(".search")
 const barraNav = document.querySelector(".bar")
 let parmSearch = "/?name="
 
 botonPrueba.addEventListener("click", function(){
     parmSearch = `/?name=${barraNav.value}`
+    apiURL = `https://rickandmortyapi.com/api/character${parmSearch}`
     getCharacter()
     return parmSearch
 })
 
-const apiURL = "https://rickandmortyapi.com/api/character"
-
 async function getCharacter(){
     try{
-        if(barraNav.value.length > 0){
-            const cardContainer = document.querySelector(".card-container")
-            const child = document.querySelector(".individual-card")
-            cardContainer.removeChild(child)
-            let searchCharacter = `${apiURL}${parmSearch}`
-            let response = await fetch(searchCharacter)
-            let {results} = await response.json()
-            for (let i = 0; i < results.length; i++) {
-                makeCard(results[i])
-            }
-        }else {
-        searchCharacter = `${apiURL}`
-        let response = await fetch(searchCharacter);
+        let response = await fetch(apiURL);
         //const character = await response.json() //Vemos todo lo que nos proporciona la API
         let {results} = await response.json() //Utilizamos un Destructuring para acceder directamente
         for (let i = 0; i < results.length; i++) {
             makeCard(results[i])
-        }
         }
         
     }
