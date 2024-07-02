@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, #000321, #00123a, #001955, #021f71, #1a248c);
+    background-repeat: no-repeat;
+}
+.card-container{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.individual-card{
+    background-color: #888888;
+    padding: 0;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 25px;
+    width: 500px;
+
+}
+
+.card{
+    display: flex;
+}
+
+.img-character{
+    margin: 0px 25px auto 0px;
+    border-radius: 25px 0px 0px 25px;
+    -webkit-border-radius: 25px 0px 0px 25px;
+    -moz-border-radius: 25px 0px 0px 25px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.name-character{
+    font-size: xx-large;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+.info-characterOrigin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.info-characterOrigin h5{
+    margin: 0;
+    font-size: 1rem;
+}
+.info-characterOrigin p{
+    margin: 0;
+}
+
+.info-characterLocation{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.info-characterLocation h5{
+    margin: 0;
+    font-size: 1rem;
+}
+.info-characterLocation p {
+    margin: 0;
+}
+
+.status{
+    margin: 0;
+    font-weight: 400;
+}
+
+.main-container{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    min-height: 100vh;
+}
+
+
+
+.container-barSearch{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.form-barSearch{
+    display: flex;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.bar{
+    position: absolute;
+    height: 2rem;
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    z-index: 10;
+    left: -150px;
+}
+
+
+.search{
+    position: absolute;
+    background: none;
+    border: none;
+    z-index: 20;
+}
+
+.icon-search{
+    position: absolute;
+    width: 25px;
+    margin: auto;
+    z-index: 20;
+    top: 5px;
+    left : -140px
+}
+
+.list-search{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.list-search li{
+    cursor: pointer;
+}
+
+.container-page{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 20;
+    margin-top: 50px;
+}
+.icon-page{
+    width: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.icon-page:hover{
+    background-color: grey;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.null{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.numberPage{
+    display: flex;
+    color: white;
+    margin: auto;
+    padding: 0;
+}
